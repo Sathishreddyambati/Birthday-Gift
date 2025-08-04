@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday Supreme</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Particle Background -->
+    <div id="particles-js"></div>
+    
+    <!-- Audio Player (hidden) -->
+    <audio id="bgMusic" loop autoplay>
+        <source src="assets/music/birthday-song.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+    
+    <!-- Music Control -->
+    <div class="music-control" onclick="toggleMusic()">
+        <i class="fas fa-music"></i>
+        <span id="musicText">Music On</span>
+    </div>
+    
+    <!-- Main Content -->
+    <div class="container">
+        <!-- Hero Section -->
+        <section class="hero" data-aos="fade-in">
+            <h1 class="glow">Happy Birthday Supreme</h1>
+            <div class="cake">
+                <div class="plate"></div>
+                <div class="layer layer-bottom"></div>
+                <div class="layer layer-middle"></div>
+                <div class="layer layer-top"></div>
+                <div class="icing"></div>
+                <div class="candle">
+                    <div class="flame"></div>
+                </div>
+            </div>
+            <p class="subtitle">Your special day deserves a special celebration!</p>
+        </section>
+        
+        <!-- Gallery Section -->
+        <section class="gallery-section" data-aos="fade-up">
+            <h2>Our Beautiful Memories</h2>
+            <div class="gallery">
+                <div class="gallery-item"><img src="assets/images/img1.jpg" alt="Memory 1"></div>
+                <div class="gallery-item"><img src="assets/images/img2.jpg" alt="Memory 2"></div>
+                <div class="gallery-item"><img src="assets/images/img3.jpg" alt="Memory 3"></div>
+                <div class="gallery-item"><img src="assets/images/img4.jpg" alt="Memory 4"></div>
+                <div class="gallery-item"><img src="assets/images/img5.jpg" alt="Memory 5"></div>
+                <div class="gallery-item"><img src="assets/images/img6.jpg" alt="Memory 6"></div>
+                <div class="gallery-item"><img src="assets/images/img7.jpg" alt="Memory 7"></div>
+                <div class="gallery-item"><img src="assets/images/img8.jpg" alt="Memory 8"></div>
+            </div>
+        </section>
+        
+        <!-- Message Section -->
+        <section class="message-section" data-aos="fade-up">
+            <div class="message-card">
+                <h2>To The Most Beautiful Soul</h2>
+                <p>
+                    Supreme, you're a true blessing in my life. May your birthday be filled with love, 
+                    laughter, and unforgettable moments. This website is a small gift from my heart to you.
+                </p>
+                <p class="signature">With all my love,<br>Sathish <span class="heart">💖</span></p>
+            </div>
+        </section>
+    </div>
+    
+    <!-- Footer -->
+    <footer data-aos="fade-up">
+        <p>Made with <span class="heart">❤️</span> by Sathish</p>
+    </footer>
+    
+    <!-- Scripts -->
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script>
+        // Initialize particles.js
+        document.addEventListener('DOMContentLoaded', function() {
+            particlesJS('particles-js', {
+                "particles": {
+                    "number": {
+                        "value": 80,
+                        "density": {
+                            "enable": true,
+                            "value_area": 800
+                        }
+                    },
+                    "color": {
+                        "value": "#ffffff"
+                    },
+                    "shape": {
+                        "type": "circle",
+                        "stroke": {
+                            "width": 0,
+                            "color": "#000000"
+                        },
+                        "polygon": {
+                            "nb_sides": 5
+                        }
+                    },
+                    "opacity": {
+                        "value": 0.5,
+                        "random": false,
+                        "anim": {
+                            "enable": false,
+                            "speed": 1,
+                            "opacity_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "size": {
+                        "value": 3,
+                        "random": true,
+                        "anim": {
+                            "enable": false,
+                            "speed": 40,
+                            "size_min": 0.1,
+                            "sync": false
+                        }
+                    },
+                    "line_linked": {
+                        "enable": true,
+                        "distance": 150,
+                        "color": "#ffffff",
+                        "opacity": 0.4,
+                        "width": 1
+                    },
+                    "move": {
+                        "enable": true,
+                        "speed": 2,
+                        "direction": "none",
+                        "random": false,
+                        "straight": false,
+                        "out_mode": "out",
+                        "bounce": false,
+                        "attract": {
+                            "enable": false,
+                            "rotateX": 600,
+                            "rotateY": 1200
+                        }
+                    }
+                },
+                "interactivity": {
+                    "detect_on": "canvas",
+                    "events": {
+                        "onhover": {
+                            "enable": true,
+                            "mode": "grab"
+                        },
+                        "onclick": {
+                            "enable": true,
+                            "mode": "push"
+                        },
+                        "resize": true
+                    },
+                    "modes": {
+                        "grab": {
+                            "distance": 140,
+                            "line_linked": {
+                                "opacity": 1
+                            }
+                        },
+                        "bubble": {
+                            "distance": 400,
+                            "size": 40,
+                            "duration": 2,
+                            "opacity": 8,
+                            "speed": 3
+                        },
+                        "repulse": {
+                            "distance": 200,
+                            "duration": 0.4
+                        },
+                        "push": {
+                            "particles_nb": 4
+                        },
+                        "remove": {
+                            "particles_nb": 2
+                        }
+                    }
+                },
+                "retina_detect": true
+            });
+            
+            // Initialize AOS (Animate On Scroll)
+            AOS.init({
+                duration: 1000,
+                once: true
+            });
+        });
+        
+        // Music toggle function
+        function toggleMusic() {
+            const music = document.getElementById('bgMusic');
+            const musicText = document.getElementById('musicText');
+            
+            if (music.paused) {
+                music.play();
+                musicText.textContent = 'Music On';
+            } else {
+                music.pause();
+                musicText.textContent = 'Music Off';
+            }
+        }
+        
+        // Autoplay music with user interaction
+        document.addEventListener('click', function() {
+            const music = document.getElementById('bgMusic');
+            if (music.paused) {
+                music.play().catch(e => console.log('Autoplay prevented:', e));
+            }
+        }, { once: true });
+    </script>
+</body>
+  </html>
